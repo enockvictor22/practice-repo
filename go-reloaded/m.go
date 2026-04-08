@@ -1,9 +1,9 @@
 package main
 
-import ( 
+import (
 	"fmt"
-	"unicode"
 )
+
 var (
 	a = 10
 	b = 27
@@ -16,20 +16,20 @@ func main() {
 }
 
 func LargestNum() int {
-	var a,b,c int
+	var a, b, c int
 	fmt.Print("input first number : ")
 	fmt.Scanln(&a)
 
 	fmt.Print("input second number: ")
 	fmt.Scanln(&b)
-	
+
 	fmt.Print("input third number: ")
 	fmt.Scanln(&c)
 
-	if a >= b && a >=c {
+	if a >= b && a >= c {
 		fmt.Println(a)
 		return a
-	}else if b >= a && b >= c {
+	} else if b >= a && b >= c {
 		fmt.Println(b)
 		return b
 	} else {
@@ -38,12 +38,12 @@ func LargestNum() int {
 	}
 }
 
-func greatestNum(){
-	if a >= b && a >=c {
+func greatestNum() {
+	if a >= b && a >= c {
 		fmt.Println(a)
-	}else if b >=a && b >= c {
+	} else if b >= a && b >= c {
 		fmt.Println(b)
-	}else {
+	} else {
 		fmt.Println(c)
 	}
 }
